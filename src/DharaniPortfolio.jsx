@@ -114,8 +114,9 @@ export default function Portfolio() {
     <div style={{ background: "#080C1A", color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", minHeight: "100vh", overflowX: "hidden", width: "100%" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@700;800&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body { overflow-x: hidden; max-width: 100vw; }
+        * { box-sizing: border-box; margin: 0; padding: 0; overflow-x: hidden; }
+        html { overflow-x: hidden; max-width: 100%; }
+        body { overflow-x: hidden; max-width: 100%; position: relative; }
         html { scroll-behavior: smooth; }
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: #080C1A; }
@@ -164,8 +165,8 @@ export default function Portfolio() {
 
       {/* HERO */}
       <section id="Home" style={{ minHeight: "100vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden", paddingTop: 64 }}>
-        <div className="mesh" style={{ width: 500, height: 500, background: "rgba(124,58,237,0.15)", top: -100, right: -100 }} />
-        <div className="mesh" style={{ width: 300, height: 300, background: "rgba(14,165,233,0.1)", bottom: 50, left: -50 }} />
+        <div className="mesh" style={{ width: 400, height: 400, background: "rgba(124,58,237,0.15)", top: -100, right: -50, maxWidth: "40vw" }} />
+        <div className="mesh" style={{ width: 250, height: 250, background: "rgba(14,165,233,0.1)", bottom: 50, left: -30, maxWidth: "30vw" }} />
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 5%", width: "100%" }}>
           <div className="hero-grid" style={{ display: "flex", alignItems: "center", gap: 60 }}>
             <div style={{ flex: 1 }}>
