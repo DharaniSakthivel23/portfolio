@@ -111,7 +111,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div style={{ background: "#080C1A", color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", minHeight: "100vh" }}>
+    <div style={{ background: "#080C1A", color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", minHeight: "100vh", overflowX: "hidden", width: "100%" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@700;800&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
